@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>stylesheet switcher</title>
+<link rel="stylesheet" type="text/css" href="day.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+     $(document).ready(function()
+     	{
+     		var link=$('link');
+     		$('button').on('click',function()
+     			{
+
+     				var $this=$(this),stylesheet=$this.data('pramod').toLowerCase();    				
+
+     				link.attr('href',stylesheet+'.css');
+
+     				$this.siblings('button').removeAttr('disabled').end().attr('disabled','true');
+     				
+     			});
+     	});
+
+
+	</script>
+
+</head>
+
+
+<body >
+	
+<h1>Switch to other mode</h1>
+
+<button data-pramod="night">Night</button>
+<button data-pramod="day">Day</button>
+
+</body>
+
+
+</html>

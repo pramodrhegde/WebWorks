@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Obligatory Slider</title>
+	<style type="text/css">
+     
+     body
+     {
+     	margin-top: 40px
+     }
+    .main
+    {
+
+       width:600px;
+       margin: auto;
+    }
+     *
+     {
+     	margin:0px;
+     	padding: 0px;
+     }
+    .slider 
+    {
+    	width:inherit;
+    	height: 359px;
+       overflow: scroll;
+
+    }
+    .slider ul
+    {
+    	list-style: none;
+    	width:12000px;
+    	
+    }
+    .slider li
+    {
+    	float: left;
+    }
+    
+    .slidernav
+    {
+    	width:inherit;
+    	display:none;
+    	padding: 40px 0 0 0;
+
+    }
+    button
+    {
+    	padding: 10px;
+    	margin-right: 5px;
+    }
+
+
+
+	</style>
+</head>
+<body>
+
+<div class="main">
+	
+	<div class="slider">
+		<ul>
+			
+			<li><img src="img/desp1.jpg" alt="image"></li>
+		    <li><img src="img/desp2.jpg" alt="image"></li>
+		    <li><img src="img/desp3.jpg" alt="image"></li>
+		    <li><img src="img/faf6.jpg" alt="image"></li>
+		    <li><img src="img/h1.jpg" alt="image"></li>
+		    <li><img src="img/h2.jpg" alt="image"></li>
+		    <li><img src="img/im1.jpg" alt="image"></li>
+		    <li><img src="img/im2.jpg" alt="image"></li>
+		    <li><img src="img/joker.jpg" alt="image"></li>
+		    <li><img src="img/pr1.jpg" alt="image"></li>
+		    <li><img src="img/pr2.jpg" alt="image"></li>
+		    <li><img src="img/pr3.jpg" alt="image"></li>
+		    <li><img src="img/sm1.jpg" alt="image"></li>
+		    <li><img src="img/sp1.jpg" alt="image"></li>
+		    <li><img src="img/sp2.jpg" alt="image"></li>
+		    <li><img src="img/th2.jpg" alt="image"></li>
+
+
+		</ul>
+	</div>
+
+	<div class="slidernav">
+		<button data-dir="prev">Prev</button>
+		<button data-dir="next">Next</button>
+	</div>
+</div>
+ 
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="slider_inheritance.js"></script>
+
+</body>
+</html>

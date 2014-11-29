@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Style Switcher</title>
+		<link rel="stylesheet" href="css.css"></link>
+		<script type="text/javascript" src="jquery-1.11.1.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('a.style_switch_button').click(function(){
+					var parent=$(this).closest('.style-switch');
+					var current_theme=parent.attr('class').split(' ')[1].split('_')[1];
+					//alert(current_theme.attr('class'));
+					//alert(current_theme);
+					if(current_theme==='white'){
+						$('a.style_switch_button').css({"transform":"translateX(85px)"});
+						$('a.light_theme').css({"z-index":"-1"});
+						$('a.style_switch_button').toggleClass('change');
+						parent.removeClass('style-switch_white');
+						parent.addClass('style-switch_black');
+
+					}else{
+						$('a.style_switch_button').css({"transform":"translateX(0px)"});
+						$('a.light_theme').css({"z-index":"1"});
+						$('a.style_switch_button').toggleClass('change');
+						parent.removeClass('style-switch_black');
+						parent.addClass('style-switch_white');
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li class="style-switch style-switch_white">
+				<a href="#" class="style_switch_button light_theme" data-theme="light">P</a>
+				<a href="#" class="style_switch_button dark_theme" data-theme="dark">P</a>
+			</li>
+		</ul>
+	</body>
+</html>

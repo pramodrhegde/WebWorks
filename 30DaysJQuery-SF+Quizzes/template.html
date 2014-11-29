@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Template</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="handlebars-v1.3.0.js"></script>
+	<script type="text/javascript">
+    
+     $(document).ready(function()
+     	{
+     		alert("lets starrt");
+            var content=[{ author:{fname:'pramod',lname:'hegde'},tweet:"fuck you",age:23},
+            {author:{fname:'fernando',lname:'torres'},tweet:'chipped it <strong>boss</strong>'}];
+
+            var template=Handlebars.compile($("#template").html());
+           
+            var tweet=template(content);
+              console.log(tweet);
+
+            $('ul.tweets').append(tweet);
+
+     	});
+    
+    Handlebars.registerHelper('fullname',function(author)
+    {
+        return author.fname+' '+author.lname;
+    });
+
+    
+	</script>
+</head>
+<body>
+<h2>DOM load Complate</h1>
+<ul class="tweets">
+	<script id="template" type="text/x-handlebars-template">
+	{{#each this}}
+     <li>  
+
+        <h2>{{fullname author}} {{#if age}}<span> - {{age}}</span> {{/if}}</h2>
+
+        <p>{{{tweet}}}</p>
+      </li>
+     {{/each}}
+	</script>
+</ul>
+</body>
+</html>

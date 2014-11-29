@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Contact Form</title>
+	<style type="text/css">
+
+     #main
+     {
+     	width:600px;
+     	margin: auto;
+     }
+
+     #container
+     {
+     	background-color: silver;
+        
+     }
+     
+     .close
+     {
+     	padding: 2px 5px 2px 0px;
+     	float: right;
+     	color: red;
+     	font-family: arial;
+        margin: 0px;
+        cursor: pointer;
+       position: absolute;
+     }
+     h3
+     {
+     	clear: both;
+     	padding-left: 40px;
+     	 margin-bottom: 2px;
+     	margin-top: 0px;
+     }
+     hr
+     {
+     	margin: 0px;
+     }
+     ul
+     {
+     	list-style: none;
+     	font-weight: bold;
+     	padding-bottom: 20px;
+     }
+     textarea
+     {
+     	width:500px;
+     	height: 200px;
+     }
+
+     input
+     {
+     	width: 500px;
+     	border-style: inset;
+     }
+
+     .js #container
+     {
+     	position: absolute;
+     	top: 0;
+        width: inherit;
+        display: none;
+     }
+	</style>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
+</head>
+<body >
+<div id="main">	
+<div id="blog">
+	<h1>My Blog Post</h1>
+	<p>
+		A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or ...
+		‎History and orthography - ‎Typographical considerations - ‎In computing
+		Paragraphs - The Writing Center
+		writingcenter.unc.edu › Handouts
+		This handout will help you understand how paragraphs are formed, how to develop stronger paragraphs, and how to completely and clearly express your ideas.
+		Welcome to Paragraph, a writing space in NYC
+		paragraphny.com/
+		Paragraph is a workspace for writers in New York City. It provides a quiet, tranquil place to write, and is located close to Union Square.
+		Paragraph - We help people discover, tell & experience ...
+		www.paragraph.com/
+		Paragraph helps you create and curate beautiful stories that are easy to produce and powerful to experience on any device.
+		HTML Paragraphs - W3Schools
+		www.w3schools.com/html/html_paragraphs.asp
+		The example above will work in most browsers, but don't rely on it. Forgetting the end tag can produce unexpected results or errors. Note: Future version of ...
+		Paragraphs and Topic Sentences - Indiana University
+		www.indiana.edu/~wts/pamphlets/paragraphs.shtml
+		Apr 7, 2014 - A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do ...
+	</p>
+</div>	
+
+<div id="container">
+	<form post="#">
+	
+		<h3>Contact Me!!!</h3>
+		<hr/>
+		<ul>
+			<li>
+				<label>Name</label><br/>
+				<input type="textbox" />
+			</li>
+
+			<li>
+				<label>E-Mail</label><br/>
+				<input type="textbox" />
+			</li>
+
+			<li>
+				<label>Whats Up?</label><br/>
+				<textarea></textarea>
+			</li>
+
+			<li>
+				<button type="submit">Submit</button>
+			</li>
+
+		</ul>
+	</form>
+</div>
+</div>
+
+
+<script type="text/javascript">
+
+     $(document).ready()
+     {
+     	$('html').addClass('js');
+
+        var contactForm = {
+
+            container:$('#container'),
+
+            config:{
+
+            	effect:'slideToggle',
+            	speed:200
+            },
+
+        	init: function(config)
+        	{
+                $.extend(this.config,config);
+               $('<button></button>',{ text:'Contact Me'})
+               .insertAfter('div p')
+               .on('click',this.showform);
+                
+        	},
+
+        	showform:function()
+        	{
+        		var cf=contactForm,
+        		container=cf.container,
+        		config=cf.config;
+        		
+        		if(container.is(':hidden'))
+        		{
+        			 contactForm.close.call(container);
+                     container[config.effect](config.speed);
+        		}
+        	  
+              
+        	},
+             
+        	close:function()
+        	{
+                $this=$(this);
+                if($this.find('span').length)
+                {
+                	return;
+                }
+                $this.prepend('<span class="close">X</span>')
+                .on('click',function()
+                {
+                	$this[contactForm.config.effect](contactForm.config.speed);
+                })
+        	}
+        };
+
+
+        contactForm.init(
+        	{
+        		effect:'fadeToggle',
+        		speed:500
+        	});
+
+
+     }
+      
+
+	</script>
+</body>
+</html>

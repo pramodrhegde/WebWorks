@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajax Load</title>
+</head>
+<body>
+
+
+<div class="info">
+	<div id="static">
+	  <a href="ajax_load_about.html">About Me</a><br/>
+	  <a href="ajax_load_contact.html">Contact Me</a>
+
+	</div>
+	
+	<div id="dynamic">
+		
+	</div>
+
+</div>
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+	
+(function ()
+	{
+       $('#static').find('a').on('click',function(e)
+       	{
+             var $this=$(this);
+             var href=$this.attr('href');
+             $('div #dynamic').load(href);
+
+             e.preventDefault();
+       	});
+
+		
+	})();
+			
+
+
+</script>
+</body>
+</html>

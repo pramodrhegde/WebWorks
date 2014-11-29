@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+	
+$(
+	function ()
+	{
+		console.log($('h1').next().next().addClass('sample'));	
+	});	
+
+
+</script>
+<style type="text/css">
+	
+
+	p,h1
+	{
+		color: green;
+	}
+.emphasis
+{
+	color: red;
+}
+.sample
+{
+	color: blue;
+}
+
+</style>
+
+
+</head>
+
+<body class="emphasis">
+	
+<h1>this is title</h1>	
+<p>
+	this is text
+</p>	
+<ul >
+	<li>Jquery</li>
+	<li>Javascript</li>
+	<li>Html</li>
+	<li>css</li>
+	<ul>
+		<li>tags</li>
+		<li>styles</li>
+	</ul>
+</ul>
+
+
+</body>
+
+</html>

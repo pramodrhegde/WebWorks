@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>JSONP</title>
+		<script type="text/javascript" src="jquery-1.11.1.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$("#submit_button").click(function(e){
+				e.preventDefault();
+				var inputValue=$("#input_id").val();
+
+				$.ajax({
+					crossDomain:true,
+					async:false,
+					type:"GET",
+					url:"http://localhost/JSONP_Example/index.php",
+					data:{},
+					dataType:'jsonp',
+					jsonpCallback:'myCallback',
+					success:function(response){
+						$("#input_id").val(response.success);
+					},
+					error: function(xhr, status, error) {
+  							var err = eval("(" + xhr.responseText + ")");
+  							console.log(status);
+  							console.log(error);
+					}
+				});
+				function myCallback(jsonResponse){
+					alert(jsonResponse);
+				};
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<form id="form">
+			<input type="text" id="input_id">
+			<input type="submit" value="submit" id="submit_button">
+		</form>
+	</body>
+</html>

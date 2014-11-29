@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Silder</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+      $(document).ready(function()
+      	{
+      		
+      		$('dd').filter(':nth-child(n+4)').hide();
+
+      		$('dl').on('mouseenter','dt',function()
+      		{
+      			$(this).next().slideDown(100).siblings('dd').slideUp(100);
+      		});
+
+      	});
+
+	</script>
+
+	<style type="text/css">
+
+
+   body
+    {
+    	width:500px;
+    	margin:auto;
+    	text-align: center;
+
+    }
+
+dt
+{
+    cursor: pointer;
+	background-color: #e3e3e3;
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 2em;
+
+	border-top: solid white 1px;
+    border-bottom: solid #c5c5c5 1px;
+}
+    dd
+    {
+    	margin: 0px;
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+
+	</style>
+</head>
+<body>
+	
+<dl>
+  <dt>What are your hours</dt>
+  <dd>we are open 24/7</dd>
+
+   <dt>What are your hours</dt>
+  <dd>we are open 24/7</dd>
+
+   <dt>What are your hours</dt>
+  <dd>we are open 24/7</dd>
+
+   <dt>What are your hours</dt>
+  <dd>we are open 24/7</dd>
+
+</dl>
+
+</body>
+</html>

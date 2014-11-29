@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fade_Slide_Toggle</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	
+	$(document).ready(function()
+		{
+           var box=$('div.box');
+
+           $('button').on('click',function()
+           	{
+           		box.fadeSlideToggle();
+           	});
+
+          $.fn.fadeSlideToggle = function( speed, easing, callback ) {
+
+          	var $this=$(this);
+
+          	$this.animate(
+                     {'opacity':'toggle',
+                       'height':'toggle'},
+                     {duration:2000}
+           			);
+           		   
+          };
+
+		});
+	</script>
+	<style type="text/css">
+
+body
+{
+	width: 800px;
+	margin:auto;
+}
+.box
+{
+
+}
+.animate
+{
+	position: absolute;
+	top:575px;
+	left:280px;
+}
+
+	</style>
+</head>
+<body>
+
+<div class="box">
+	
+	<p>
+		To the benefit of software and applications everywhere, UX has become an increasingly important step in the Software Development lifecycle. Even though UX is a slightly surreptitious layer of design, it's no less important. It, by the nature of its name, defines the experience of the users. That experience determines whether or not they want to come back for more, or run screaming in the other direction. UX is something anyone can do. The problem is not everyone can do it well. I can undertake the visual design for a website, but I guarantee you that it will look dreadful and unprofessional.
+		If you learn nothing else about UX I ask you to remember these two things.
+
+		Know thy user.
+		You are not the user (in most cases).
+		If you don't know your user base, their habits and tendencies, and why they do or do not perform certain actions, then you can't be expected to design a good experience for them. Even if you are very similar to your users, remember that you are only one person and that does not define the qualities of your user base as a whole. Get to know your users and design the experience with them in mind. The role of a UXer is to have that knowledge, constantly expand it, and then design with those users in mind, crafting amazing experiences that will delight and fulfill them.
+	</p>
+	<p>
+		Requirements
+
+		Requirements Gathering is one of the first steps in designing the UX. During this stage you need to ask a lot of questions. Many questions may not be able to be answered right away but note those and be persistent. There are several types of requirements:
+
+		Business Requirements: The goals and needs of other parts of your company or what's necessary to monetize the product. Unfortunately, this often trumps some things you may want to do. It's a necessary evil if your product is anything beyond a project for pure enjoyment.
+		Design Requirements: Sometimes there may be special design considerations or needs that must be met.
+		Technology Requirements: There could be a specific technology need (platform, language, etc.) you need to consider in the design. What are your limitations?
+		User Requirements: Who is this product for? Who is the main audience? Is there a fringe audience and, if so, who is it? Does it cover your entire user base or support a subset?
+	</p>
+	<p>
+		Little users on Photodune
+		You'll need to ask the following questions at minimum to get a grasp on your user base:
+
+		Who is this for? Demographics? Likes/Dislikes? Hobbies? Occupation?
+		What special requirements do they represent? Do they present a particular problem you need to solve? Do they fit a particular business need?
+		What mental models of the user base do you need to consider? Do they vary significantly within subsets?
+		When, Why, How would the users use this product?
+		What accessibility concerns do you need to include in the design?
+		Task Analysis
+
+		After we've completed our user analysis we need to move onto the task analysis. What is the primary action the users need to perform? There may be many things someone can do on your site or application but there's always a main task. You need to figure out what that task is and optimize the UX for that task for the particular user base for which it is purposed. We still haven't reached the designing stage, but we now know what we'll be designing, and for whom we're designing it.
+	</p>
+</div>
+<button class="animate">Animate</button>
+</body>
+</html>

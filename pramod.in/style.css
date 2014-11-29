@@ -1,0 +1,129 @@
+/************************************************************************************
+RESET
+*************************************************************************************/
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,section
+strong, sub, sup, tt, var, legend, fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+html { 
+  background: url(images/Fernando-Torres.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body
+{
+	font:16px/120% "Segoe UI Light",'Segoe UI';
+	color: rgba(255, 255, 255, 0.6);
+}
+h1
+{
+	font-size: 24px/150%;
+	font-weight: 100;
+}
+h2
+{
+	font-size: 22px;
+	font-weight: 100;
+}
+p
+{
+	font-weight: 100;
+}
+a
+{
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: underline;
+}
+#main
+{
+	margin:0 auto;
+	max-width: 98%;
+	position: relative;
+}
+
+#site_desc
+{
+width: 50%;
+position: relative;
+top:10px;
+left: 550px;
+
+}
+#site_desc
+{
+	font:24px/120% "Segoe UI Light",'Segoe UI';
+
+}
+#site_desc h1
+{
+  margin-bottom: 10px;
+}
+#site_desc h2
+{
+	margin-bottom: 10px;
+	position: absolute;
+	left: 200px;
+}
+#my_pic
+{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top:-60px;
+	right: -60px;
+}
+#my_pic img
+{
+	width: 300px;
+	height: 300px;
+	float: right;
+    border-radius: 50%;
+    border:solid 5px rgba(255,255,255,1);
+}
+
+#about_fernando
+{
+
+	width: 300px;
+	position: relative;
+	top: 100px;
+	left: 550px;
+}
+
+#about_fernando h1
+{
+	margin-bottom: 10px;
+}
+
+#about_fernando p
+{
+	padding: 10px 10px 10px 0;
+	margin-bottom: 10px;
+}
+p>a
+{
+	color: #999;
+    text-decoration: underline;
+}
+p>a:hover
+{
+	color: #fff;
+	text-decoration: none;
+}
+/*Footer*/
+#footer
+{
+	position: absolute;
+	top: 400px;
+	left: 550px;
+}

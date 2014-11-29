@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Custom Effect</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+      $(document).ready(function ()
+      	{
+      		var content=$('div.content');
+
+      		content.hide();
+
+      		$('h1').on('click',function()
+      		{
+      			content.flash();
+      		})
+
+
+      		$.fn.flash = function( speed, easing, callback ) {
+		      
+		      var $this=$(this);
+
+		      $this.fadeIn(500,function()
+		      {
+		      	$this.delay(5000).fadeOut(500);
+
+		      });
+
+		      };
+	         
+      	});
+	</script>
+	<style type="text/css">
+
+	
+
+	</style>
+</head>
+<body>
+	
+
+	<h1>Click Me</h1>
+
+	<div class="content">
+		<p>
+			To the benefit of software and applications everywhere, UX has become an increasingly important step in the Software Development lifecycle. Even though UX is a slightly surreptitious layer of design,<br/> it's no less important. It, by the nature of its name, defines the experience of the users. That experience determines whether or not they want to come back for more, or run screaming in the other direction. <br/>UX is something anyone can do. The problem is not everyone can do it well. I can undertake the visual design for a website, but I guarantee you that it will look dreadful and unprofessional.<br/>
+			If you learn nothing else about UX I ask you to remember these two things.
+
+			Know thy user.
+			You are not the user (in most cases).
+			If you don't know your user base, their habit<br/>s and tendencies, and why they do or do not perform certain actions, then you can't be expected to design a good experience for them. Even if you are very similar to your users, remember that you are only one person and that does not define the qualities of your user base as a whole. Get to know your users and design the experience with them in mind. The role of a UXer is to have that knowledge, constantly expand it, and then design with those users in mind, crafting amazing experiences that will delight and fulfill them.
+		</p>
+	</div>
+</body>
+
+</html>

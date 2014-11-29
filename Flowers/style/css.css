@@ -1,0 +1,238 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+header,section,nav,aside,article
+{
+	display: block;
+}
+
+body
+{
+	margin: auto;
+	padding: 22px 0px;
+	width: 940px;
+	font:13px/22px Helvetica, Arial, sans-serif;;
+	background: #f0f0f0;
+}
+
+h1,h2
+{
+	font-size: 28px;
+	line-height: 44px;
+	padding: 22px 0px;
+}
+h3
+{
+	font-size: 18px;
+	line-height: 22px;
+	padding: 11px 0px;
+}
+p
+{
+   padding-bottom: 22px;
+}
+
+nav {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: url(../images/nav_background.png) repeat-x;
+}
+
+nav ul
+{
+	list-style: none;
+	margin: 0 auto;
+	width: 940px;
+}
+nav li
+{
+	float: left;
+}
+nav ul li a
+{
+	display: block;
+	color: #777;
+	width:140px;
+	text-align: left;
+	line-height: 44px;
+	text-decoration: none;
+}
+nav ul li a:hover
+{
+	color: #fff;
+}
+nav ul li a.selected
+{
+	color: #fff;
+}
+
+nav ul li.rss a
+{
+	background: url(../images/rss.png)no-repeat left center;
+	padding-left: 25px;
+}
+
+#main_section
+{
+	margin-top: 66px;
+    padding: 22px 44px;
+	background:#467612 url(../images/intro_flower.png)no-repeat;
+    background-size: 100%;
+    border-radius: 22px;
+}
+#main_section h2,#main_section p
+{
+	width: 350px;
+}
+#main_section h2
+{
+	font-weight: normal;
+		color: #fff;
+}
+#main_section p
+{
+	color: #d9f499;
+}
+
+#content
+{
+	display: table;
+}
+#main_content
+{
+  display: table-cell;
+  width: 620px;
+  padding-right: 22px;
+}
+#content aside
+{
+	display: table-cell;
+	width: 300px;
+	background: url(../images/sidebar_background.png)top left;
+}
+aside section
+{
+	background: url(../images/sidebar_section_background.png);
+	margin: 22px 0px 0px 20px;
+	padding: 11px 22px;
+	border-radius: 10px;
+}
+.blogPost div
+{
+	-webkit-column-count: 2;
+	-webkit-column-gap: 22px;
+}
+
+aside ul
+{
+	list-style: none;
+	padding: 11px 22px;
+}
+aside ul a{
+	color: #222;
+	text-decoration: none;
+}
+aside ul a:hover
+{
+	text-decoration: underline;
+}
+#comments
+{
+	border-top: 1px solid #d7d7d7;
+}
+#comments article
+{
+ display: table;
+}
+#comments article header
+{
+	display: table-cell;
+	width: 40%;
+	padding:22px;
+}
+#comments article p
+{
+	display: table-cell;
+	width: 50%;
+	padding: 20px;
+}
+#comments article:nth-child(2n+1)
+{
+	background: #e3e3e3;
+	border-radius: 5px;
+}
+form p
+{
+ display: table;
+}
+form p label
+{
+	display: table-cell;
+	width: 200px;
+	text-align: right;
+	padding-right: 20px;
+	font-weight: bold;
+	vertical-align: top;
+}
+form input[type="text"],form input[type="email"] ,form input[type="url"] 
+{
+	width:300px;
+	display: table-cell;
+	height: 20px;
+	border: 1px solid #d7d7d7;
+}
+
+form textarea
+{
+	width:300px;
+	height: 50px;
+	border: 1px solid #d7d7d7;
+}
+
+form input[type="submit"]
+{
+	margin-left: 220px;
+}
+
+footer
+{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background: #222;
+}
+footer div
+{
+	display: table;
+	margin: 0 auto;
+	width: 940px;
+	color: #777;
+}
+footer section
+{
+	padding: 44px 0px;
+	display: table-cell;
+	width: 30%;
+	padding-right: 3%;
+}
+footer section h3
+{
+	color: white;
+}
+footer a
+{
+	color: #999;
+}
+footer a:hover
+{
+	color: #fff;
+	text-decoration: none;
+}
+footer ul
+{
+	padding-left: 40px;
+}

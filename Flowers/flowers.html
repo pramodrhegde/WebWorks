@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+ <title>Semantic HTML using HTML5 and CSS3</title>
+ <link rel="stylesheet" href="style/css.css">
+</head>
+
+<body>
+	<header>
+  		<h1>The Flower Blog</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a class="selected"href="#">Blog</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Archives</a></li>
+			<li><a href="#">Contact</a></li>
+			<li class="rss"><a href="#">Subscribe via RSS</a></li>
+		</ul>
+	</nav>
+	<section id="main_section">
+		<h2>Do you love flowers as much as we do?</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+		</p>
+	</section>
+	<div id="content">
+		<div id="main_content">
+				<section>
+					<article class="blogPost">
+						<header>
+							<h1>This is the title of the blog</h1>
+							<p>Posted On <time datetime="2014-10-30T11:20:20+1:00">30th October 2014</time> by <a href="#">Pramod</a> - <a href="#">3 comments</a>
+						</header>
+						<div>
+								<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod tellus eu orci imperdiet nec rutrum lacus blandit. Cras enim nibh, sodales ultricies elementum vel, fermentum id tellus. Proin metus odio, ultricies eu pharetra dictum, laoreet id odio. Curabitur in odio augue. Morbi congue auctor interdum. Phasellus sit amet metus justo. Phasellus vitae tellus orci, at elementum ipsum. In in quam eget diam adipiscing condimentum. Maecenas gravida diam vitae nisi convallis vulputate quis sit amet nibh. Nullam ut velit tortor. Curabitur ut elit id nisl volutpat consectetur ac ac lorem. Quisque non elit et elit lacinia lobortis nec a velit. Sed ac nisl sed enim consequat porttitor.
+							</p>
+							<figure>
+								<img src="images/flower.png" alt="Flowers"/>
+							</figure>
+							<p>
+								Pellentesque ut sapien arcu, egestas mollis massa. Fusce lectus leo, fringilla at aliquet sit amet, volutpat non erat. Aenean molestie nibh vitae turpis venenatis vel accumsan nunc tincidunt. Suspendisse id purus vel felis auctor mattis non ac erat. Pellentesque sodales venenatis condimentum. Aliquam sit amet nibh nisi, ut pulvinar est. Sed ullamcorper nisi vel tortor volutpat eleifend. Vestibulum iaculis ullamcorper diam consectetur sagittis. Quisque vitae mauris ut elit semper condimentum varius nec nisl. Nulla tempus porttitor dolor ac eleifend. Proin vitae purus lectus, a hendrerit ipsum. Aliquam mattis lacinia risus in blandit.
+							</p>
+							<p>
+								Vivamus vitae nulla dolor. Suspendisse eu lacinia justo. Vestibulum a felis ante, non aliquam leo. Aliquam eleifend, est viverra semper luctus, metus purus commodo elit, a elementum nisi lectus vel magna. Praesent faucibus leo sit amet arcu vehicula sed facilisis eros aliquet. Etiam sodales, enim sit amet mollis vestibulum, ipsum sapien accumsan lectus, eget ultricies arcu velit ut diam. Aenean fermentum luctus nulla, eu malesuada urna consequat in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque massa lacus, sodales id facilisis ac, lobortis sed arcu. Donec hendrerit fringilla ligula, ac rutrum nulla bibendum id. Cras sapien ligula, tincidunt eget euismod nec, ultricies eu augue. Nulla vitae velit sollicitudin magna mattis eleifend. Nam enim justo, vulputate vitae pretium ac, rutrum at turpis. Aenean id magna neque. Sed rhoncus aliquet viverra.
+							</p>
+						</div>
+						
+					</article>
+			</section>
+	
+			<section id="comments">
+				<header>
+					<h3>Comments</h3>
+				</header>
+				<article>
+					<header>
+						<a href="#">George</a> On <time datetime="2014-10-30T22:10:10+1:89">30th October 2014 at 22:10</time>
+					</header>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+					</p>
+				</article>
+
+				<article>
+					<header>
+						<a href="#">George</a> On <time datetime="2014-10-30T22:10:10+1:89">30th October 2014 at 22:10</time>
+					</header>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+					</p>
+				</article>
+
+				<article>
+					<header>
+						<a href="#">George</a> On <time datetime="2014-10-30T22:10:10+1:89">30th October 2014 at 22:10</time>
+					</header>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+					</p>
+				</article>
+			  </section>
+			<form action="#" method="POST">
+					<h3>Post a Comment</h3>
+					<p>
+						<label for="name">Name</label>
+						<input type="text" id="name" required>
+					</p>
+					<p>
+						<label for="email">E-mail</label>
+						<input type="email" id="email" required>
+					</p>
+					<p>
+						<label for="website">Website</label>
+						<input type="url" id="url" required>
+					</p>
+					<p>
+						<label for="comment">Cooment</label>
+						<textarea name="comment" id="comment_area" required></textarea>
+					</p>
+					<p>
+						<input type="submit" value="Post Comment">
+					</p>
+			</form>
+		</div>	
+		<aside>
+			<section>
+				<header>
+					<h3>Categories</h3>
+					<ul>
+						<li><a href="#">Asd dadw dawd</a></li>
+						<li><a href="#">Qdkjef sfdskjf da</a></li>
+						<li><a href="#">Edsfsjk fdsjkd</a></li>
+						<li><a href="#">Ougfvdjk dsfj</a></li>
+						<li><a href="#">Zds fksfkj da</a></li>
+				    </ul>
+				</header>
+			</section>
+            <section>
+            	<header>
+            		<h3>Archives</h3>
+            	</header>
+            	<ul>
+					<li><a href="#">Vsd dadw dawd</a></li>
+					<li><a href="#">Sdkjef sfdskjf da</a></li>
+					<li><a href="#">Pdsfsjk fdsjkd</a></li>
+					<li><a href="#">Lugfvdjk dsfj</a></li>
+					<li><a href="#">Wds fksfkj da</a></li>
+				</ul>
+            </section>
+		</aside>
+	</div>
+	<footer>
+		<div>
+			<section>
+			<h3>About</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="#">FUKC</a> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+		<section>
+			<h3>BlogRoll</h3>
+				<ul>
+					<li><a href="#">Waht</a></li>
+					<li><a href="#">Qdw</a></li>
+					<li><a href="#">FEesd</a></li>
+					<li><a href="#">GReg</a></li>
+					<li><a href="#">FREfe</a></li>
+				</ul>
+		</section>
+		<section>
+			<h3>Populer</h3>
+				<ul>
+					<li><a href="#">Waht Fksjfe sejhfsf fsfesjgsgsgrsd dfg</a></li>
+					<li><a href="#">Qdw Efhsif ifrg iigh rd shgfiuhrgiud </a></li>
+					<li><a href="#">FEesd FEseh hgdehugd gdkgh fjirg digjdoi</a></li>
+					<li><a href="#">GReg BVksjghfrgj gjdorgjdigdgjd dgjdgjd di</a></li>
+					<li><a href="#">FREfe Vjekshg rgdrig  gdr gid gdg gdirgdo</a></li>
+				</ul>
+		</section>
+		</div>
+	
+	</footer>
+</body>
+</html>

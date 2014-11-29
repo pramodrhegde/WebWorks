@@ -1,0 +1,39 @@
+Pramod R Hegde
+HTML5,CSS3 Enthusiast/Software Developer
+pramodrhegde.in
+
+Introduction
+I am passionate software engineer specialized in Userinterface & Experience design,and also with other wide ranging passions & specialities.
+I love designs and art which makes a software more understandable and usable.
+
+Work Experiance
+- Currently working as Application Developer at Volvo IT.
+- 1.4 years of experience in Web App development mainly on UI/UX side.
+
+Projects
+-Order Manager web app for trucks business.which takes care of complete trucks ordering process.
+ Team of 15-20 members,worked as UI developer.project duration was 6 months.
+-Taxes and Fees Calculator web app for trucks business.which handles the tax calculation part of trucks sales business.
+ Team of 5 members,worked as UI/UX developer also worked on back end coding which included tax calculation logic.
+ project duration 8 months and counting.
+
+Other Projects
+-Reccomender Systems for movie at IISC (final year project at collage)
+
+Technical Skills:
+HTML,CSS,jQuery,javascript,ASP.NET MVC,C#,PHP,Less,Telerik,Kendo,Bootstrap,MySQL,
+
+Applications Preficiency:
+Photoshop CS6,Illustrator,InDesign,Github,Bitbucket,TFS,Visual Studio 13,Microsoft SQL Server,Firebug and IE,chrome developer tools.
+
+Education:
+B.E,PUC,SSLC
+
+Area of Interest:
+HTML5,CSS3,Icon Design,PSD to HTML,Digital Painting,and all other cool stuffs related to design and art.
+
+
+
+
+
+

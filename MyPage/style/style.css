@@ -1,0 +1,277 @@
+/*Common*/
+body
+{
+	background-color: #000;
+	background-image: url(../images/bg-body.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+
+	font-family: 'KomikaTextTightRegular', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+
+}
+
+/*Containers*/
+#page
+{
+	margin: 0px auto;
+	width:960px;
+}
+
+/*************************Header***************************/
+#header
+{
+   width:960px;
+   height:180px;
+   float:left;
+  
+}
+
+      #header-content{
+          /*background-color:#036;*/
+           margin-top: 10px;
+           float:right;
+           width:440px;
+           height:115px;
+      }
+
+
+         #search{
+           text-align:right;
+           padding-top:10px;
+          }
+
+         #search input{
+            vertical-align:middle;
+          }
+
+          #search .search_input{
+            width:160px;
+            margin-right:10px;
+            padding:6px 10px;
+          
+            color:#F2AA00;
+            font-family:'KomikaTextTightRegular',Arial, Helvetica, sans-serif;
+            font-size:14px;
+          
+            background-color:#280000;
+            border:1px solid #7C0000;
+          
+            -webkit-border-radius: 3px;
+            -khtml-border-radius: 3px; 
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+          }
+
+          #search .search_button
+          {
+            padding-bottom: 2px;
+
+            -webkit-border-radius: 3px;
+            -khtml-border-radius: 3px; 
+            -moz-border-radius: 3px;
+            border-radius: 5px;
+          }
+
+        #social_media
+        {
+          text-align: right;
+          vertical-align: middle;
+          padding-top: 20px;
+          color: white;
+          font-family:'KomikaTitleRegular', Arial, Helvetica, sans-serif;
+          font-size: 15px;
+          text-shadow:2px 2px 2px rgba(0,0,0,.5);
+
+        }
+
+
+          #main_navigation
+          {
+            float: right;
+            /*margin:18px 20px -2px 0px;*/
+          }
+
+          #main_navigation li
+          {
+           display: inline;
+           width:120px; 
+          position: relative;
+
+          }
+
+          #main_navigation a
+          {
+            display: block;
+            float: left;
+           padding: 7px 20px 8px 20px;
+           margin-left: 5px;
+            
+            color:#FFF;
+           font-family:'KomikaTextItalic', Arial, Helvetica, sans-serif;
+           font-size:18px;
+           text-decoration:none;
+
+           text-shadow:2px 2px 2px rgba(0,0,0,.5);
+
+           -webkit-border-top-right-radius: 3px;
+           -webkit-border-top-left-radius: 18px;
+           -khtml-border-radius-topright: 3px;
+           -khtml-border-radius-topleft: 18px;
+           -moz-border-radius-topright: 3px;
+           -moz-border-radius-topleft: 18px;
+           border-top-right-radius: 3px;
+            border-top-left-radius: 18px;
+          }
+
+          #main_navigation li a:hover
+          {
+          background-image:url(../images/bg-main-navigation.png);
+             background-position:left;
+             background-repeat:no-repeat;
+          }
+
+          #main_navigation li a.selected
+          {
+             background-image:url(../images/bg-main-navigation.png);
+             background-position:left;
+             background-repeat:no-repeat;
+          }
+
+         #logo
+      {
+        padding-top: 30px;
+      }
+          
+/******************banner************************/
+
+   #top_banner
+      {
+        float: left;
+        width:1051px;
+        height: 260px;
+      
+        margin-left:-60px;
+        background-image: url(../images/bg-banner.png);
+        background-position: center-top;
+        background-repeat:no-repeat;
+      }
+            
+    /* sliding-banner*/
+                     
+          img{
+               border:0px;
+            }
+
+             .graphic,#prevBtn, #nextBtn{
+               margin:0;
+               padding:0;
+               display:block;
+               overflow:hidden;
+               text-indent:-8000px;
+            }
+
+            #container{ 
+             
+            } 
+
+            #banner_content{
+                 margin:0 auto;
+                width:830px;
+                position:relative;
+                text-align:left;
+                padding-left:65px;
+                padding-top: 10px;
+
+            } 
+
+            #slider{
+                margin:0 auto;
+                position:relative;
+                width:830px;
+                overflow:hidden;
+                background:none;
+               
+            } 
+
+            #slider ul, #slider li{
+                margin:0;
+                padding:0;
+                background:none;
+            }
+
+            #slider li{ 
+
+                width:830px;
+                height:250px;
+                overflow: hidden;
+
+            }
+
+            #slider li a{
+                background:none;
+            } 
+
+            #prevBtn, #nextBtn{ 
+                display:block;
+                width:65px;/*img width +15 padding*/
+                height:40px;
+                position:absolute;
+                left:0px;
+                top:185px;
+            }
+
+            #nextBtn{ 
+                left:695px; /*Banner Width*/
+            } 
+
+            #prevBtn a{
+                display:block;
+                width:65px; /*img width +15 padding*/
+                height:40px;
+                background:url(../images/btn-prev.png) no-repeat left;
+                
+            } 
+
+            #nextBtn a{
+                display:block;
+                width:65px;/*img width +15 padding*/
+                height:40px;
+                background:url(../images/btn-next.png) no-repeat right; 
+               
+            }
+
+            .bubble{
+                position:absolute;
+                float:right; 
+                width:370px;
+                height:235px;
+                top:-5px;
+                right:-5px;
+                background-image:url(../images/bg-bubble.png);
+                color:#FFF;
+            } 
+
+
+    /*End sliding-banner*/
+
+/******************Content***********************/
+#content
+{
+
+   width:960px;
+   height:400px;/* Temporal */
+   float: left;
+}
+
+/****************Footer***************************/
+#footer
+{
+   width:960px;
+   height:250px;/* Temporal */
+   float:left;
+    
+   background-image:url(../images/bg-footer.jpg);
+   background-position:top center;
+   background-repeat:no-repeat;
+}

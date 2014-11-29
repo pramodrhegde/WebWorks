@@ -1,0 +1,214 @@
+@font-face
+{
+	font-family: 'Champagne & Limousines';
+    src: url(../fonts/Champagne & Limousines.ttf);
+    font-family: 'TheCinthiaEdito';
+    src: url(../fonts/TheCinthiaEdito.ttf);
+}
+body
+{
+	letter-spacing: .5px;
+	position: relative;
+	margin: 0;
+	padding:0;
+	background:#111;
+	color:#bbb;
+	font:18px/120% 'Champagne & Limousines';
+}
+#main
+{
+
+	margin:0 auto;
+	width:960px;
+	max-width: 95%;
+}
+ul
+{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+a
+{
+	text-decoration:none;
+	color:#bbb;
+}
+a:hover
+{
+	color:#eee;
+}
+header h1
+{
+	text-align:center;
+	border:1px solid;
+	border-radius: 5px;
+	margin:50px 0px 10px 0px;
+}
+header h1 a
+{
+	text-decoration:none;
+	color:#bbb;
+	display:block;
+	width:100%;
+	padding:20px 0px;
+	font-weight:normal;
+
+}
+header h1:hover
+{
+	box-shadow:inset 0 0 5px #eee;
+	border:1px solid #eee;
+}
+header h1 a:hover
+{
+	color:#eee;
+}
+p
+{
+	margin-top:10px;
+	padding:20px 0px;
+}
+nav
+{
+    width:auto;
+}
+
+nav ul
+{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+nav ul li
+{
+	display:inline;
+}
+nav ul li a
+{
+	display:block;
+	float:left;
+	text-decoration:none;
+	width:100px;
+    padding:10px 20px;
+    margin:10px 10px 10px 0px;
+    border:1px solid #bbb;
+    color:#bbb;
+    border-radius: 5px;
+    text-align:center;
+}
+nav ul li a:hover
+{
+	box-shadow:inset 0 0 5px #eee;
+	border:1px solid #eee;
+	color:#eee;
+	background: #222;
+	font-size: 20px;
+}
+
+section
+{
+	clear:both;
+	min-height: 310px;
+}
+#contact_form p
+{
+	display: table;
+	padding: 10px 0px 0px 0px;
+}
+#contact_form label
+{
+	display: table-cell;
+	width: 100px;
+	vertical-align: top;
+}
+#contact_form input textarea
+{
+	display: table-cell;
+}
+input,textarea
+{
+	color: #bbb;
+	font:18px 'Champagne & Limousines';
+	background: #222;
+	border:1px solid #bbb;
+	border-radius: 5px;
+	padding: 5px;
+}
+input
+{
+	width: 200px;
+}
+textarea
+{
+	width: 300px;
+	height: 50px;
+}
+input[type="submit"]
+{
+	margin-top: 0;
+	cursor: pointer;
+	background: #111;
+	margin-left: 100px;
+}
+input[type="submit"]:hover
+{
+	background: #222;
+	box-shadow: inset 0 0 5px #eee;
+}
+footer{
+ margin-top: 10px;
+ position: relative;
+ height: 100px;
+ border-top: 1px solid #222;
+}
+footer h2
+{
+	font-family: 'TheCinthiaEdito';
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+	font-weight: normal;
+}
+#copyright
+{
+	width: 100%;
+}
+#copyright p
+{
+	margin: 0;
+	padding: 0;
+}
+#copyright a
+{
+	padding-left: 15px;
+}
+
+#social
+{
+	position: absolute;
+	top:0;
+	right: 0;
+}
+#social li
+{
+	display: inline;
+}
+#social li a
+{
+	display: block;
+	float: left;
+	padding: 10px 0px;
+	margin: 22px 5px 0px 0px;
+	width: 50px;
+	text-align: center;
+	background: #bbb;
+	color: #111;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 10px;
+}
+#social li a:hover
+{
+	background: #fff;
+	color: #000;
+	font-size: 24px;
+}
