@@ -1,0 +1,147 @@
+/*font setting*/
+	  @font-face{
+	  	font-family:'Roboto Light';
+	  	font-style: normal;
+	  	font-weight: 300;
+	  	src:url("../font/Roboto-Light.ttf") format('truetype');
+	  }
+	  @font-face{
+	  	font-family:'Roboto Medium';
+	  	font-style: normal;
+	  	font-weight: 300;
+	  	src:url("../font/Roboto-Medium.ttf") format('truetype');
+	  }
+
+	  @font-face{
+	  	font-family:'Roboto Thin';
+	  	font-style: normal;
+	  	font-weight: 300;
+	  	src:url("../font/Roboto-Thin.ttf") format('truetype');
+	  }
+
+	  @font-face{
+	  	font-family:'Roboto Regular';
+	  	font-style: normal;
+	  	font-weight: 300;
+	  	src:url("../font/Roboto-Regular.ttf") format('truetype');
+	  }
+	  @font-face{
+	  	font-family:'Roboto Black';
+	  	font-style: normal;
+	  	font-weight: 300;
+	  	src:url("../font/Roboto-Black.ttf") format('truetype');
+	  }
+
+/*reset*/
+header,section,footer{
+	display: block;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+*
+{
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+    font: 16px/130% "Lato", sans-serif;
+    color: #333333;
+    background-color: #eeeeee;
+}
+header{
+	max-height: 600px;
+	height: 600px;
+	overflow: hidden;
+}
+ h1{
+	font-size: 36px;
+	padding: 5px 5px 5px 5px;
+}
+header img{
+	width:100%;
+	position: fixed;
+	top:0;
+}
+header .name{
+	position: absolute;
+	color: #333;
+	top: 50px;
+	left: 50px;
+	text-shadow:1px 0px 0px #eeeeee;
+}
+header .fancy_font{
+	font-family: "Kaushan Script",cursive;
+	font-size: 30px;
+}
+
+header .social{
+	position: absolute;
+	top: 50px;
+	right: 50px;
+}
+header .social a{
+	margin-top: -15px;
+	text-indent:-9999px;
+	padding-left: 5px;
+	float: left;
+	width: 48px;
+	height: 48px;
+	opacity: 0.8;
+}
+header .social a.facebook{
+	background:url(../images/f.png) no-repeat;
+
+}
+header .social a.twitter{
+	background:url(../images/t.png) no-repeat;
+
+}
+header .social a.linkedin{
+	background:url(../images/l.png) no-repeat;
+
+}
+header .social a.google{
+	background:url(../images/g.png) no-repeat;
+
+}
+header .social a:hover{
+	opacity: 1;
+}
+
+header .intro{
+	color: white;
+	position: absolute;
+	text-align: center;
+	bottom: 35%;
+	width:100%;
+}
+.content{
+	background-color: #eeeeee;
+	height: 400px;
+	max-height: 400px;
+	overflow: hidden;
+}
+#content_nav{
+	position: absolute;
+	width: 200px;
+	top: 50px;
+}
+#content_nav ul{
+	text-align: center;
+}
+#content_nav li{
+	float: left;
+}
+
+footer{
+	background-color: white;
+}

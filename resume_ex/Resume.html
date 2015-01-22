@@ -1,19 +1,149 @@
 <html>
 <head>
 	<title>Resume</title>
+	<style>
+/*font setting*/
+	  @font-face{
+	  	font-family:'Roboto Light';
+	  	font-style: normal;
+	  	font-weight: 300;
+	  	src:url("fonts/Roboto-Light.ttf") format('truetype');
+	  }
+	  @font-face{
+	  	font-family:'Roboto Medium';
+	  	font-style: normal;
+	  	font-weight: 300;
+	  	src:url("fonts/Roboto-Medium.ttf") format('truetype');
+	  }
+
+	  @font-face{
+	  	font-family:'Roboto Thin';
+	  	font-style: normal;
+	  	font-weight: 300;
+	  	src:url("fonts/Roboto-Thin.ttf") format('truetype');
+	  }
+
+	  @font-face{
+	  	font-family:'Roboto Regular';
+	  	font-style: normal;
+	  	font-weight: 300;
+	  	src:url("fonts/Roboto-Regular.ttf") format('truetype');
+	  }
+	  @font-face{
+	  	font-family:'Roboto Black';
+	  	font-style: normal;
+	  	font-weight: 300;
+	  	src:url("fonts/Roboto-Black.ttf") format('truetype');
+	  }
+
+/* document style*/
+	  *{
+	  	margin: 0;
+	  	padding: 0;
+	  }
+	  body{
+	  	/*#99CC33*/
+	  	margin: 0px auto;
+	  	border-top:20px solid #99CC33;
+	  	color: #111;
+	  	font: 15px/130% 'Roboto Light';
+	  }
+	  h1{
+	  	margin: 10px 0px 0px 0px;
+	  	font:1.8em 'Roboto Medium';
+	  }
+	  h2{
+	  	font-weight: normal;
+	  	font-size:1.2em ;
+	  }
+	  h3{
+	  	margin: 10px 0px 0px 0px;
+	  	border-bottom: 3px solid #99CC33;
+	  	font-size: 1em;
+	  	letter-spacing: 1px;
+	  }
+	  ul{
+	  	list-style: disc;
+	  	margin: 5px 0px 0px 150px;
+	  }
+	  header{
+	  	text-align: center;
+	  }
+	  header h1{
+	  	
+	  }
+	  #intro p,#project p,#skill p,#education p,#personal p{
+	  	margin: 5px 0px 0px 120px;
+	  }
+	  time{
+	  	float: right;
+	  	font-size: 12px;
+	  }
+	  .line_break{
+	  	height: 5px;
+	  }
+
+	</style>
 </head>
 <body>
 	<div id="main">
 		<header>
 			<h1>PRAMOD R HEGDE</h1>
 			<h2> HTML,CSS Enthusiast/Software Developer </h2>
+			<p>pramodrhegde.in</p>
 			<p> pramod.rh@gmail.com,(+91)7411169180 </p>
-			<p><a href="#"></a>pramodrhegde.in</p>
+			<!--<p><a href="#"></a>pramodrhegde.in</p>-->
 		</header>
 
 		<section id="intro">
 			<h3>Introdunction</h3>
-
+			<p>I am passionate software engineer specialized in User Interface and Experience design,and also with other wide ranging passions and specialities.
+               I love designs and art which makes a software more understandable and usable.
+            </p>
+		</section>
+		<section id="work">
+			<h3>Work Experience</h3>
+			<ul>
+				<li>Currently working as Application Developer at Volvo IT.</li>
+				<li>1.5 years of experience in Web App development mainly on UI/UX side.</li>
+			</ul>
+		</section>
+		<section id="project">
+			<h3>Projects</h3>
+			<p><b>Application Developer</b><time> Feb 2014 to Current</time></p>
+			<p><b>Volvo IT</b> - Banglore</p>
+			<ul>
+				<li>Taxes and Fees Calculator web app for trucks business.which handles the tax calculation part of trucks sales business.</li>
+				<li>Team of 5 members,worked as UI/UX developer also worked on back end coding.</li>
+			</ul>
+			<div class="line_break"></div>
+			<p><b>UI Developer</b><time> Aug 2013 to Jan 2014</time></p>
+			<p><b>Volvo IT</b> - Banglore</p>
+			<ul>
+				<li>Order Manager web app for trucks business.which takes care of complete trucks ordering process.</li>
+				<li>Team of 10-15 members,worked as UI developer.</li>
+			</ul>
+			<div class="line_break"></div>
+		    <p><b>Final Year Project on Recommender Systems</b></p>
+			<p><b>Indian Institute of Science</b> - Bangalore</p>
+			<ul>
+				<li>Matrix Factorization Algorithm for Movie Recommender System</li>
+				<li>Team of 3 members,worked as a developer.</li>
+			</ul>
+		</section>
+		<section id="skill">
+			<h3>Technical/Application Skills</h3>
+			<p>HTML CSS jQuery javascript ASP.NET MVC C# java PHP Less Telerik Kendo Bootstrap MySQL</p>
+			<p>Photoshop CS6,Illustrator,InDesign,Github,Bitbucket,TFS,Visual Studio,Microsoft SQL Server,Firebug and IE,chrome developer tools.</p>
+		</section>
+		<section id="education">
+			<h3>Education</h3>
+			<p><b>B.E in Computer Science from Visvesvaraya Technological University Belgaum</b></p>
+			<p><b>Banglore Institute of Technology</b> - Bangalore</p>
+			<p>Aggregate - 82.6%</p>
+			<div class="line_break"></div>
+			<p><b>PUC and SSLC from Jawahar Navodaya Vidyalaya North Canara</b></p>
+			<p>PUC - 92.6% , SSLC - 94.8%</p>
 		</section>
 	</div>
 </body>

@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Temp</title>
+		<script type="text/javascript" src="jquery-1.11.1.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#imageLink').mouseover(function(){
+					var $img=$('<img/>').attr('src',this.href);
+					$img.load(function(){
+						//alert('image loaded');
+						$(this).addClass('imageClass').appendTo('body').fadeIn();
+					});
+					
+				}
+			).mouseout(function(){
+					$('image.imageClass').fadeOut().remove();
+				});
+		});
+		</script>
+		<style>
+			a{
+				display: block;
+			}
+		 .imageClass{
+		 	width: 100px;
+		 	height: 100px;
+		 	border-radius: 5px;
+		 	border: 2px solid black;
+		 	z-index: 1;
+		 	display: block;
+		 }
+		</style>
+	</head>
+
+	<body>
+		<a href="images/im1.jpg" id="imageLink">Image1</a>
+		<!--<img src="images/im1.jpg" class="imageClass">-->
+	</body>
+</html>

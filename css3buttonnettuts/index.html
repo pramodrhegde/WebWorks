@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 BUtton</title>
+		<style type="text/css">
+			body{
+				margin: 200px auto;
+				width: 400px;
+			}
+			.panel{
+				width: 100px;
+				background: #eee;
+				background: -webkit-gradient(linear,left top,left bottom,from(#bbb),to(#888));
+				text-align: center;
+				padding: 20px 0 20px 0;
+			}
+			#css3button{
+				 font-family: 'Lucida Grande', Arial, sans-serif;
+				 font-size: 13px;
+				 display: inline-block;
+				 padding: 3px 6px;
+				 border-radius: 3px;
+				 border:1px solid #444;
+				 background-color: #c0c2c0;
+				 background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#888));
+				 box-shadow: 0px 1px 0px #ccc;
+				 text-shadow:0px 1px 0px #ccc;
+				 -webkt-user-select:none;
+				 cursor: default;
+			}
+			#css3button:active{
+				background: #bbb;
+				box-shadow: 0px 1px 0px #ccc,black 0px 1px 3px inset,rgba(0,0,0,0.4) 0px -5px 12px inset;			
+			}
+		</style>
+	</head>
+	<body>
+		<div class="panel">
+			<button id="css3button">Button</button>
+		</div>
+	</body>
+</html>

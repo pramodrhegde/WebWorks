@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Star Rating System</title>
+		<style type="text/css">
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			body{
+				font-family: arial,sans-serif,helvetica,verdana;
+				font-size: 16px;
+				background: white;
+			}
+			#main{
+				width:90%;
+				max-width: 600px;
+				margin: 50px auto;
+				text-align:center;
+			}
+			.movie{
+				padding: 20px 0px;
+			}
+			.stars{
+				border:1px solid black;
+				width: 170px;
+				margin: 0px auto;
+				height: 32px;
+				padding: 10px;
+			}
+			.star{
+				background: url(star_empty.png)no-repeat;
+				float: left;
+				width:30px;
+				height: 28px;
+				padding:2px;
+
+			}
+			.votes{
+
+			}
+
+			.ratings_vote {
+			    background: url(star_full.png) no-repeat;
+			}
+			.ratings_over {
+			    background: url(star_highlight.png) no-repeat;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div id="main">
+			<h1>Rate the Movies</h1>
+			<div class="movie">
+				Rate:John Wick
+				<div id="r1" class="stars">
+					<div class="star1 star"></div>
+					<div class="star2 star"></div>
+					<div class="star3 star"></div>
+					<div class="star4 star"></div>
+					<div class="star5 star"></div>
+				</div>
+				<div class="votes">
+					Vote Data
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="jquery-1.11.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+
+				$('.stars').each(function(i){
+					var widget=this;
+					var out_data={ widget_id:$(widget).attr('id'),
+								fetch:1
+								};
+
+					$.post('ratings.php',out_data,function(INFO){
+						$(widget).data('fsr',INFO);
+						set_vote(widget);
+					},'json');
+
+				});
+
+				$('.star').hover(
+
+				//on mouseover
+				function(){
+					$(this).prevAll().andSelf().addClass('ratings_over');
+					$(this).nextAll().removeClass('ratings_vote');
+				},
+
+				//on mouseleave
+				function(){
+					$(this).prevAll().andSelf().removeClass('ratings_over');
+					set_votes($(this).parent());
+				});
+
+				$('.star').bind('click',function(){
+					var star=this;
+					var widget=$(this).parent();
+
+					var clicked_data={clicked_on:$(star).attr('class'),
+									  widget_id:widget.attr('id')
+										};
+
+					$.post('ratings.php',clicked_data,function(INFO){
+						widget.data( 'fsr', INFO );
+            			set_votes(widget);
+
+					},'json');
+				});
+
+				function set_votes(widget){
+					 var avg = $(widget).data('fsr').whole_avg;
+				    var votes = $(widget).data('fsr').number_votes;
+				    var exact = $(widget).data('fsr').dec_avg;
+				     
+				    $(widget).find('.star' + avg).prevAll().andSelf().addClass('ratings_vote');
+				    $(widget).find('.star' + avg).nextAll().removeClass('ratings_vote'); 
+				    $(widget).find('.votes').text( votes + ' votes recorded (' + exact + ' rating)' );
+				}
+
+			})();
+
+		</script>
+	</body>
+</html>

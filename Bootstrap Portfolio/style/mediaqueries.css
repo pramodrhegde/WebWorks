@@ -1,0 +1,27 @@
+@media (max-width:991px){
+
+	.sidebar{
+		position: static;
+		width:100%;
+		height: auto;
+	}
+	#profile{
+		padding: 100px 15px 40px;
+	}
+	.navigation{
+		position: fixed;
+		top:0;
+		width: 100%;
+		background: black;
+	}
+	.navigation ul li{
+		display: inline-block;
+		width: 25%;
+	}
+	.navigation ul li a{
+		padding: 0px 10px;
+	}
+	ul.flexbox{
+		display: flex;
+	}
+}
