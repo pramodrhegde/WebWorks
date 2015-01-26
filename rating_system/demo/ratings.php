@@ -6,10 +6,6 @@
     
     isset($_POST['fetch']) ? $rating->get_ratings() : $rating->vote();
     
-    
-    
-
-
 
 class ratings {
     

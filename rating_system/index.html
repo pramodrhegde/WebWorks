@@ -70,7 +70,7 @@
 
 		<script type="text/javascript" src="jquery-1.11.1.js"></script>
 		<script type="text/javascript">
-			$(function(){
+			$(document).ready(function(){
 
 				$('.stars').each(function(i){
 					var widget=this;
@@ -114,6 +114,9 @@
 					},'json');
 				});
 
+			});
+
+			
 				function set_votes(widget){
 					 var avg = $(widget).data('fsr').whole_avg;
 				    var votes = $(widget).data('fsr').number_votes;
@@ -123,8 +126,6 @@
 				    $(widget).find('.star' + avg).nextAll().removeClass('ratings_vote'); 
 				    $(widget).find('.votes').text( votes + ' votes recorded (' + exact + ' rating)' );
 				}
-
-			})();
 
 		</script>
 	</body>

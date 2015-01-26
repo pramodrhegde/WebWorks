@@ -1,5 +1,11 @@
 <?php
 
+
+
+	$rating= new ratings($_POST['widget_id']);
+
+	isset($_POST['fetch']) ? $rating->get_ratings() : $rating->vote();
+	
 //create class ratings
 class ratings{
 
@@ -51,8 +57,4 @@ class ratings{
 	}
 }
 
-
-	$rating= new ratings($_POST['widget_id']);
-
-	isset($_POST['fetch']) ? $rating->get_ratings() : $rating->vote();
 ?>

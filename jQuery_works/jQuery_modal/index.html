@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Modal Window</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width:device-width, initial-scale=1,maximum-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="style/css.css">
+		<!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    	<![endif]-->
+	</head>
+	<body>
+		<div class="center_div">
+			<button class="click_button">Click Me</button>
+		</div>
+		<div class="modal_window">
+			<h4>Are you sure you want to do that</h4>
+			<p>Clicking yes will make Comic Sans your new system
+				default font. Seriously, have you thought this through?
+			</p>
+			<div class="window_buttons">
+				<button class="button yes_button"> <img src="images/tick.png">Yes,do it now!</button>
+				<button class="button no_button"> <img src="images/cross.png">No,i'am insane!</button>
+			</div>
+		</div>
+		<div class="modal_window_background"></div>
+
+		<script type="text/javascript" src="script/jquery-1.11.1.js"></script>
+		<script type="text/javascript" src="script/jquery-1.4.4.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				$('.click_button').click(function(){
+					$('.modal_window').css({'visibility':'visible'});
+					$('.modal_window_background').css({'display':'block'});
+				});
+
+				$('.modal_window_background,.button').click(function(){
+					$('.modal_window').css({'visibility':'hidden'});
+					$('.modal_window_background').css({'display':'none'});
+				});
+			});
+
+		</script>
+	</body>
+</html>
